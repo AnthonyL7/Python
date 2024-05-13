@@ -1,5 +1,10 @@
-# Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
-def remove_exclamation_marks(s):
-    return  s.replace("!", "")
-    
-remove_exclamation_marks("Hello World!")
+# Write a function which calculates the average of the numbers in a given list.
+def find_average(numbers):
+    if len(numbers) > 0:
+        average = sum(numbers) / len(numbers)
+        print(average)
+    elif len(numbers) == 0:
+        print(0) 
+
+
+find_average([])
