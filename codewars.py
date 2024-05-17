@@ -1,10 +1,14 @@
-# Write a function which calculates the average of the numbers in a given list.
-def find_average(numbers):
-    if len(numbers) > 0:
-        average = sum(numbers) / len(numbers)
-        print(average)
-    elif len(numbers) == 0:
-        print(0) 
+def generate_hashtag(s):
+    words = s.split()
+    if not s or len(s.strip()) == 0:
+        return False
 
+    capitals = '#' + ''.join(word.capitalize() for word in words)
+    
+    if len(capitals) > 140:
+        return False
+    else:
+        return capitals
 
-find_average([])
+# Test case
+print(generate_hashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat"))
