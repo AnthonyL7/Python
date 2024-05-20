@@ -1,9 +1,7 @@
-# Convert boolean values to strings 'Yes' or 'No'.
-def bool_to_word(boolean):
-    if boolean == True:
-        return "Yes"
-    elif boolean == False: 
-        return "No"
+def double_integer(i):
+    if i <= 0 or i >= 0:
+        number = i * 2
+        print(number) 
         
 
-bool_to_word(True)
+double_integer(-10)
