@@ -1,14 +1,15 @@
-def generate_hashtag(s):
-    words = s.split()
-    if not s or len(s.strip()) == 0:
-        return False
-
-    capitals = '#' + ''.join(word.capitalize() for word in words)
+#Complete the solution so that the function will break up camel casing, using a space between words.
+import re
+def solution(s):
     
-    if len(capitals) > 140:
-        return False
-    else:
-        return capitals
+    if " " in s:
+        new = s.replace(" ", "")
+        print(new)
+    elif s:
+        space = re.findall(r'[A-Z][a-z]*|[a-z]+', s)
+        new_word = ' '.join([word + ' ' for word in space])
+        print(new_word)
+    else: 
+        print(s)
 
-# Test case
-print(generate_hashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat"))
+solution("want Say")
