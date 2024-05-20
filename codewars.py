@@ -1,15 +1,9 @@
-#Complete the solution so that the function will break up camel casing, using a space between words.
-import re
-def solution(s):
-    
-    if " " in s:
-        new = s.replace(" ", "")
-        print(new)
-    elif s:
-        space = re.findall(r'[A-Z][a-z]*|[a-z]+', s)
-        new_word = ' '.join([word + ' ' for word in space])
-        print(new_word)
-    else: 
-        print(s)
+# Convert boolean values to strings 'Yes' or 'No'.
+def bool_to_word(boolean):
+    if boolean == True:
+        return "Yes"
+    elif boolean == False: 
+        return "No"
+        
 
-solution("want Say")
+bool_to_word(True)
