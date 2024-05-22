@@ -1,9 +1,8 @@
-#convert a Boolean to a string
+#square(n) Sum
+def square_sum(numbers):
+  total = 0
+  for i in numbers:
+    total += i ** 2
+  print(total)
 
-
-def boolean_to_string(b):
-    if b==True:
-        return 'True'
-    else: 
-        return 'False'
-boolean_to_string(True)
+square_sum([0,3,4,5])
