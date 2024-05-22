@@ -1,8 +1,8 @@
-#square(n) Sum
-def square_sum(numbers):
-  total = 0
-  for i in numbers:
-    total += i ** 2
-  print(total)
+#Return a string's even characters
+def even_chars(st):
+  
+  for i in range(0, len(st)):
+    if i % 2 == 1:
+        print(st[i])
 
-square_sum([0,3,4,5])
+even_chars("abcdefghijklm")
