@@ -1,8 +1,10 @@
-#Sum of two lowest positive integers
-def sum_two_smallest_numbers(numbers):
-    numbers.sort()
-    print(numbers[0] + numbers[1])
-    
+#Nathan loves cycling.
+#Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+#You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
-list = [19,5,42,2,77]    
-sum_two_smallest_numbers(list)
+import math
+def litres(time):
+    total_litres = math.floor(time * 0.5)
+    print(total_litres)
+
+litres(1787)
