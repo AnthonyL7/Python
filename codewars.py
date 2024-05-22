@@ -1,10 +1,12 @@
-#Nathan loves cycling.
-#Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
-#You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+#Create a function which answers the question "Are you playing banjo?".
+#If your name starts with the letter "R" or lower case "r", you are playing banjo!
+#The function takes a name as its only argument, and returns one of the following strings:
 
-import math
-def litres(time):
-    total_litres = math.floor(time * 0.5)
-    print(total_litres)
 
-litres(1787)
+def are_you_playing_banjo(name):
+    if name.startswith(("R", "r")):
+        print(name + " plays banjo")
+    else: 
+        print(name + " does not play banjo")
+
+are_you_playing_banjo("Jim")
