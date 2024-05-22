@@ -1,7 +1,8 @@
-def double_integer(i):
-    if i <= 0 or i >= 0:
-        number = i * 2
-        print(number) 
-        
+#Sum of two lowest positive integers
+def sum_two_smallest_numbers(numbers):
+    numbers.sort()
+    print(numbers[0] + numbers[1])
+    
 
-double_integer(-10)
+list = [19,5,42,2,77]    
+sum_two_smallest_numbers(list)
