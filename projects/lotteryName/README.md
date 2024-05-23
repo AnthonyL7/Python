@@ -1,0 +1,2 @@
+# Python 
+This project was inspired when me and my cousins had to0 many people wanting to join our game when we could only play with 4 people. I want this program to take the names of the people currently playing in the party and pick a random person to leave, so that someone else could join and play with us. 
