@@ -7,9 +7,13 @@ players = int(input("How many are you going to put in the lottery: "))
 list = []
 
 #Create a for loop to iterate 
+
 for i in range(players):
   gamertag =  input("Gamertag: ")
-  list.append(gamertag)
+  if len(gamertag) > 4:
+    list.append(gamertag)
+  else: 
+    print("The player's gamertag must be more than 4 characters!!")
 
 chosen = random.choice(list)
 print(f"The chosen one is: {chosen}")
