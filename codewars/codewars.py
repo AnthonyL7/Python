@@ -1,15 +1,14 @@
-#Given a list of integers, determine whether the sum of its elements is odd or even.
-#Give your answer as a string matching "odd" or "even"
+# Find whether the number is a square
+import math
+def is_square(n):
+    if n >= 0:
+      if math.sqrt(n) % 1 == 0:
+          print(True)
+      else: 
+          print(False)
+    else: 
+        print("False")
 
-def odd_or_even(list):
-  add = 0
-  for i in list:
-    add += i
-  if add % 2 == 0:
-    print("even")
-  else: 
-    print("odd")
-    
 
-odd_or_even([0])
-  
+is_square(-1)
+
