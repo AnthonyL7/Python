@@ -1,11 +1,15 @@
-#Given an array of integers, return a new array with each value doubled.
-def maps(a):
-      #using a list comprehension to display a list
-      print([i * 2 for i in a])
-      
-      #using a for loop to display each value doubled
-      for i in a:
-          multi = i * 2
-          print(multi)
+#Given a list of integers, determine whether the sum of its elements is odd or even.
+#Give your answer as a string matching "odd" or "even"
 
-maps([-1,0,2,3,4,5,6,7,8,9,10])
+def odd_or_even(list):
+  add = 0
+  for i in list:
+    add += i
+  if add % 2 == 0:
+    print("even")
+  else: 
+    print("odd")
+    
+
+odd_or_even([0])
+  
