@@ -1,14 +1,11 @@
-# Find whether the number is a square
-import math
-def is_square(n):
-    if n >= 0:
-      if math.sqrt(n) % 1 == 0:
-          print(True)
-      else: 
-          print(False)
-    else: 
-        print("False")
-
-
-is_square(-1)
-
+def basic_op(operator, value1, value2):
+    if operator == '+':
+        print(value1 + value2)
+    elif operator == '-':
+        print(value1 - value2)
+    elif operator == '*':
+        print(value1 * value2)
+    elif operator == '/':
+        print(value1 / value2)
+    
+basic_op('+', 4, 7)
