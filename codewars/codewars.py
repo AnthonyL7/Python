@@ -2,7 +2,7 @@
 #Implement the function which takes an array containing the names of people that like an item.
 
 def likes(names):
-  
+  count = 0
   #Create conditional statement to show that no one likes this
   if not names:
     print('no one likes this')
@@ -15,6 +15,9 @@ def likes(names):
   elif len(names) == 3:
     print(F"{names[0]}, {names[1]} and {names[2]} like this")
   elif len(names) >= 4:
-    print(F"{names[0]}, {names[1]} and 2 others like this")
+    index = 1
+    sub_list = names[index + 1:]
+    count = len(sub_list)
+    print(F"{names[0]}, {names[1]} and {count} others like this")
 
-likes(["Max", "John", "Mark"])
+likes(['Brian J. Mason', 'Nigel', 'Macky Stingray', 'Nene Romanova', 'Galatea', 'Sylia Stingray', 'Daley Wong', 'Priscilla S. Asagiri'])
