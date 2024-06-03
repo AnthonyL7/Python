@@ -1,7 +1,6 @@
-def sum_array(a):
-    if a: 
-      print(sum(a))
-    else: 
-       print(0)
-    
-sum_array(range(101))
+def filter_list(l):
+    'return a new list with the strings filtered out'
+    list = [x for x in l if isinstance(x, (int,float))]
+    print(list)
+
+filter_list([1,2,'a','b'])
