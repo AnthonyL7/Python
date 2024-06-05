@@ -21,11 +21,29 @@ q3_input = input(q3)
 q4_input = input(q4)
 q5_input = input(q5)
 
+#Check written questions
+def check_written_questions():
+  
+#Get multiple choice
 def get_multiple_choice(question):
   for i in question:
     print(i)
-  user_Answer = input("Answer: ")
-  question.append(user_Answer)
+  user_answer = input("Answer: ")
+  question.append(user_answer)
+
+  #Check if multiple choice inputs are correct
+  if question == "Question 6: What is the capital of France" and user_answer == "C" or user_answer == "c":
+    print("correct") 
+  elif question == "Question 7: Which planet is known as the Red Planet?" and user_answer == "B" or user_answer == "b":
+    print("correct")
+  elif question == "Question 8: What is the largest ocean on Earth?" and user_answer == "D" or user_answer == "d":
+    print("correct")
+  elif question == "Question 9: Who wrote 'To Kill a Mockingbird?" and user_answer == "A" or user_answer == "a":
+    print("correct")
+  elif question == "Question 10: Who painted the Mona Lisa?" and user_answer == "C" or user_answer == "c":
+    print("correct")
+  else:
+    print("incorrect")
 
 get_multiple_choice(q6)
 get_multiple_choice(q7)
