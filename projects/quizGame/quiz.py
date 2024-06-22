@@ -17,17 +17,53 @@ answer = [365, 60, 60, "yes", "yes", "c", "b", "d", "a", "c"]
 
 def check_written_questions():
   pass
-#Get multiple choice
-def get_multiple_choice_answer(question):
+#Get multiple choice for number 6
+def get_multiple_choice_6(question):
   ##question.append(user_answer)
   for i in question:
     print(i)
+  
   user_answer = input("Answer: ")
   check_6(user_answer)
+
+#Get multiple choice for number 7
+def get_multiple_choice_7(question):
+  ##question.append(user_answer)
+  for i in question:
+    print(i)
+  
+  user_answer = input("Answer: ")
   check_7(user_answer)
+
+#Get multiple choice for number 8
+def get_multiple_choice_8(question):
+  ##question.append(user_answer)
+  for i in question:
+    print(i)
+  
+  user_answer = input("Answer: ")
   check_8(user_answer)
+
+#Get multiple choice for number 9
+def get_multiple_choice_9(question):
+  ##question.append(user_answer)
+  for i in question:
+    print(i)
+  
+  user_answer = input("Answer: ")
   check_9(user_answer)
+
+#Get multiple choice for number 10
+def get_multiple_choice_10(question):
+  ##question.append(user_answer)
+  for i in question:
+    print(i)
+  
+  user_answer = input("Answer: ")
   check_10(user_answer)
+
+
+#Check the answer by passing get_multiple_choice into check_
   
 #Check Number 6
 def check_6 (user_answer):
@@ -64,11 +100,11 @@ def check_10 (user_answer):
   elif user_answer.lower() != answer[9]:
     print("incorrect")
 
-get_multiple_choice_answer(q6)
-get_multiple_choice_answer(q7)
-get_multiple_choice_answer(q8)
-get_multiple_choice_answer(q9)
-get_multiple_choice_answer(q10)
+get_multiple_choice_6(q6)
+get_multiple_choice_7(q7)
+get_multiple_choice_8(q8)
+get_multiple_choice_9(q9)
+get_multiple_choice_10(q10)
 
 
 
