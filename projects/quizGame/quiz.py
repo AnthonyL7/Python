@@ -15,11 +15,39 @@ q10 = ["Question 10: Who painted the Mona Lisa?", "A. Vincent Van Gogh", "B. Pab
 #Answers
 answer = [365, 60, 60, "yes", "yes", "c", "b", "d", "a", "c"]
 
-def check_written_questions():
-  pass
+#Get user input for Number 1
+def get_1(written):
+  print(written)
+  user_answer = int(input("Answer: "))
+  check_1(user_answer)
+
+#Get user input for Number 2
+def get_2(written):
+  print(written)
+  user_answer = int(input("Answer: "))
+  check_2(user_answer)
+
+#Get user input for Number 3
+def get_3(written):
+  print(written)
+  user_answer = int(input("Answer: "))
+  check_3(user_answer)
+
+#Get user input for Number 4
+def get_4(written):
+  print(written)
+  user_answer = input("Answer: ")
+  check_4(user_answer)
+
+#Get user input for Number 5
+def get_5(written):
+  print(written)
+  user_answer = input("Answer: ")
+  check_5(user_answer)
+
+
 #Get multiple choice for number 6
 def get_multiple_choice_6(question):
-  ##question.append(user_answer)
   for i in question:
     print(i)
   
@@ -28,7 +56,6 @@ def get_multiple_choice_6(question):
 
 #Get multiple choice for number 7
 def get_multiple_choice_7(question):
-  ##question.append(user_answer)
   for i in question:
     print(i)
   
@@ -37,7 +64,6 @@ def get_multiple_choice_7(question):
 
 #Get multiple choice for number 8
 def get_multiple_choice_8(question):
-  ##question.append(user_answer)
   for i in question:
     print(i)
   
@@ -46,7 +72,6 @@ def get_multiple_choice_8(question):
 
 #Get multiple choice for number 9
 def get_multiple_choice_9(question):
-  ##question.append(user_answer)
   for i in question:
     print(i)
   
@@ -55,7 +80,6 @@ def get_multiple_choice_9(question):
 
 #Get multiple choice for number 10
 def get_multiple_choice_10(question):
-  ##question.append(user_answer)
   for i in question:
     print(i)
   
@@ -63,8 +87,42 @@ def get_multiple_choice_10(question):
   check_10(user_answer)
 
 
-#Check the answer by passing get_multiple_choice into check_
-  
+#Check the answer by passing get_ into check_
+#Check Number 1
+def check_1(user_answer):
+  if user_answer != answer[0]:
+    print("incorrect")
+  else:
+    print("correct")
+
+#Check Number 2
+def check_2(user_answer):
+  if user_answer != answer[1]:
+    print("incorrect")
+  else:
+    print("correct")
+
+#Check Number 3
+def check_3(user_answer):
+  if user_answer != answer[2]:
+    print("incorrect")
+  else:
+    print("incorrect")
+
+#Check Number 4
+def check_4(user_answer):
+  if user_answer.lower() == answer[3]:
+    print("correct")
+  elif user_answer.lower() != answer[3]:
+    print("incorrect")
+
+#Check Number 5
+def check_5(user_answer):
+  if user_answer.lower() == answer[4]:
+    print("correct")
+  elif user_answer.lower() != answer[4]:
+    print("incorrect")
+
 #Check Number 6
 def check_6 (user_answer):
   if user_answer.lower() == answer[5]:
@@ -100,6 +158,12 @@ def check_10 (user_answer):
   elif user_answer.lower() != answer[9]:
     print("incorrect")
 
+
+get_1(q1)
+get_2(q2)
+get_3(q3)
+get_4(q4)
+get_5(q5)
 get_multiple_choice_6(q6)
 get_multiple_choice_7(q7)
 get_multiple_choice_8(q8)
