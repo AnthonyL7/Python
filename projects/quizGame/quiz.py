@@ -107,55 +107,55 @@ def check_3(user_answer):
   if user_answer != answer[2]:
     print("incorrect")
   else:
-    print("incorrect")
+    print("correct")
 
 #Check Number 4
 def check_4(user_answer):
   if user_answer.lower() == answer[3]:
     print("correct")
-  elif user_answer.lower() != answer[3]:
+  else:
     print("incorrect")
 
 #Check Number 5
 def check_5(user_answer):
   if user_answer.lower() == answer[4]:
     print("correct")
-  elif user_answer.lower() != answer[4]:
+  else:
     print("incorrect")
 
 #Check Number 6
 def check_6 (user_answer):
   if user_answer.lower() == answer[5]:
     print("correct")
-  elif user_answer.lower() != answer[5]:
+  else:
     print("incorrect")
 
 #Check Number 7
 def check_7 (user_answer):
   if user_answer.lower() == answer[6]:
     print("correct")
-  elif user_answer.lower() != answer[6]:
+  else:
     print("incorrect")
 
 #Check Number 8
 def check_8 (user_answer):
   if user_answer.lower() == answer[7]:
     print("correct")
-  elif user_answer.lower() != answer[7]:
+  else:
     print("incorrect")
 
 #Check Number 9
 def check_9 (user_answer):
   if user_answer.lower() == answer[8]:
     print("correct")
-  elif user_answer.lower() != answer[8]:
+  else:
     print("incorrect")
 
 #Check Number 10
 def check_10 (user_answer):
   if user_answer.lower() == answer[9]:
     print("correct")
-  elif user_answer.lower() != answer[9]:
+  else:
     print("incorrect")
 
 
