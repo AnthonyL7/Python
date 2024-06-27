@@ -1,6 +1,10 @@
-def filter_list(l):
-    'return a new list with the strings filtered out'
-    list = [x for x in l if isinstance(x, (int,float))]
-    print(list)
+#Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
-filter_list([1,2,'a','b'])
+def solution(text, ending):
+    if text.endswith(ending):
+        print(True)
+    else:
+        print(False)
+
+
+solution('samurai', 'ra')
