@@ -1,9 +1,5 @@
-def validate_pin(pin):
-    #return true or false
-  if len(pin) == 4 and pin.isdigit() or len(pin) == 6 and pin.isdigit(): 
-    print(True)
-  else: 
-    print(False)
+def reverse_seq(n):
+  print(list(range(n,0,-1)))
 
-validate_pin('-12345')
+reverse_seq(5)
 
