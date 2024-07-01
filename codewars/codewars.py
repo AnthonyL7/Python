@@ -1,5 +1,6 @@
-def reverse_seq(n):
-  print(list(range(n,0,-1)))
+def DNA_strand(dna):
+    translation = str.maketrans('ATCG', 'TAGC')
+    mod_dna = dna.translate(translation)
+    print(mod_dna)
 
-reverse_seq(5)
-
+DNA_strand('AAAA')
