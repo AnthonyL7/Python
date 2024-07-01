@@ -1,12 +1,17 @@
 def xo(s):
     s = s.lower()
     char = 'xo'
-    if 'x' not in s or 'o' not in s:
+    count_x = s.count('x')
+    count_o = s.count('o')
+    if 'x' not in s and 'o' not in s:
+        print(True)
+    if 'x' in s and 'o' not in s:
         print(False)
-    for i in char:
-        count = s.count(i)
-        if count % 2 != 0:
-            print(False)
-    print(True)     
+    if 'x' not in s and 'o' in s:
+        print(False)
+    if count_x % 2 != 0 or count_o % 2 != 0 and count_x == 0 or count_o == 0:
+        print(False)
+    return True
+   
 
-xo('zzoo')
+xo('zpzpzpp')
