@@ -1,14 +1,10 @@
-def find_it(seq):
-  if isinstance(seq, str):
-    return False
-  else: 
-    i = dict.fromkeys(seq,0)
-    for x in seq:
-      i[x] += 1
-    for key, value in i.items():
-      if value % 2 != 0:
-        print(key)
+def to_jaden_case(string):
+  words = string.split()
+  capitalized_words = [word.capitalize() for word in words]
+
+  capitalized_string = ' '.join(capitalized_words)
+  print(capitalized_string)
 
   pass
 
-find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5])
+to_jaden_case("How can mirrors be real if our eyes aren't real")
