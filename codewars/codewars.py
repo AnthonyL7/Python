@@ -1,10 +1,8 @@
-def to_jaden_case(string):
-  words = string.split()
-  capitalized_words = [word.capitalize() for word in words]
-
-  capitalized_string = ' '.join(capitalized_words)
-  print(capitalized_string)
-
+def descending_order(num):
+  string = str(num)
+  sorted_string = ''.join(sorted(string, reverse=True))
+  number = int(sorted_string)
+  print(number)
   pass
 
-to_jaden_case("How can mirrors be real if our eyes aren't real")
+descending_order(65321000)
