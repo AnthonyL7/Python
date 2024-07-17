@@ -1,5 +1,8 @@
-def find_needle(haystack):
-  index = haystack.index('needle')
-  print(f'found the needle at position {index}')
+def past(h, m, s):
+  hour_conversion = h * 3600000
+  minute_conversion = m * 60000
+  second_conversion = s * 1000
+  print(hour_conversion + minute_conversion + second_conversion)
+  pass
 
-find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False])
+past(0,1,1)
