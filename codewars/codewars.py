@@ -1,5 +1,11 @@
-def make_upper_case(s):
-  print(s.upper())
+def hero(bullets, dragons):
+
+  required_bullets = dragons * 2
+
+  if bullets < required_bullets:
+    print(False)
+  else: 
+    print(True)
   pass
 
-make_upper_case("hello")
+hero(100, 40)
