@@ -1,17 +1,5 @@
+def find_needle(haystack):
+  index = haystack.index('needle')
+  print(f'found the needle at position {index}')
 
-
-def domain_name(url):
-  if url.startswith('http://'):
-    url = url[len("http://"):]
-  elif url.startswith("https://"):
-    url = url[len("https://"):]
-  
-  if url.startswith("www."):
-    url = url[len("www."):]
-  
-  domain_part = url.split("/")[0]
-  domain = domain_part.split(".")[0]
-
-  print(domain_part)
-
-domain_name("www.xakep.ru")
+find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False])
