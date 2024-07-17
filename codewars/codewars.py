@@ -1,8 +1,5 @@
-def past(h, m, s):
-  hour_conversion = h * 3600000
-  minute_conversion = m * 60000
-  second_conversion = s * 1000
-  print(hour_conversion + minute_conversion + second_conversion)
+def make_upper_case(s):
+  print(s.upper())
   pass
 
-past(0,1,1)
+make_upper_case("hello")
