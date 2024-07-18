@@ -1,11 +1,14 @@
-def even_chars(st):
-    if len(st) < 2 or len(st) > 100:
-        print("invalid string")
-    else:
-        chars = []
-        for i in range(1, len(st), 2):
-            if i % 2 == 1:
-               chars.append(st[i])
-        print(chars)
+def square_digits(num):
+  digits = []
+  if num > 0: 
+    for digit in str(num):
+      digit = int(digit)
+      digits.append(digit)
+    square_digits = [digit ** 2 for digit in digits]
+    print(int("".join(map(str, square_digits))))
+  
+  else: 
+    return 0
+  pass
 
-even_chars("a")
+square_digits(0)
