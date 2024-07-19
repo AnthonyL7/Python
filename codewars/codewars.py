@@ -1,13 +1,11 @@
-import re
+def open_or_senior(data):
+  lst = []
+  for age, score in data:
+    if age >= 55 and score > 7:
+      lst.append("Senior")
+    else:
+      lst.append("Open")
+  print(lst)
+  pass
 
-def printer_error(s):
-
-  range_count = 0
-  for char in s:
-    if char not in 'abcdefghijklm':
-      range_count += 1
-  string = f"{range_count}/{len(s)}"
-  print(string)
-  
-    
-printer_error("kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyzuuuuu")
+open_or_senior([(16, 23),(73,1),(56, 20),(1, -1)])
