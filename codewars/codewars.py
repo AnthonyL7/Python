@@ -1,8 +1,9 @@
-import re
-def solution(s):
-    
-    result = re.sub(r'(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])',' ', s)
-    print(result)
+def digital_root(n):
+        while n >= 10:
+                n = [int(digit) for digit in str(n)]
+                n = sum(n)     
+        
+        print(n)
 
 
-solution("helloWorld")
+digital_root(942)
