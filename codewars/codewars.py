@@ -1,9 +1,9 @@
-def digital_root(n):
-        while n >= 10:
-                n = [int(digit) for digit in str(n)]
-                n = sum(n)     
-        
-        print(n)
+def two_sum(numbers, target):
+  for i, val in enumerate(numbers):
+    for j, val2 in enumerate(numbers[i+1:], start=i+1):
+      if val + val2 == target:
+        tuple = (i, j)
+  print(tuple)
 
-
-digital_root(942)
+  
+two_sum([1,2,3], 4)
