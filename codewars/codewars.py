@@ -1,8 +1,14 @@
-def min_max(lst):
-  list1 = []
-  list1.append(min(lst))
-  list1.append(max(lst))
-  print(list1)
-  pass
 
-min_max([2334454,5])
+def persistence(n):
+  count = 0
+  while n >= 10:
+    split = [int(n) for n in str(n)]
+    product = 1 
+    for num in split:
+      product *= num
+    n = product
+    count += 1
+  print(count)
+    
+
+persistence(999)
