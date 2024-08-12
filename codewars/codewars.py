@@ -1,9 +1,8 @@
-def two_sum(numbers, target):
-  for i, val in enumerate(numbers):
-    for j, val2 in enumerate(numbers[i+1:], start=i+1):
-      if val + val2 == target:
-        tuple = (i, j)
-  print(tuple)
+def min_max(lst):
+  list1 = []
+  list1.append(min(lst))
+  list1.append(max(lst))
+  print(list1)
+  pass
 
-  
-two_sum([1,2,3], 4)
+min_max([2334454,5])
