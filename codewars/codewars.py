@@ -1,14 +1,8 @@
+def is_triangle(a, b, c):
+  if a > 0 and b > 0 and c > 0:
+    if c + b > a and a + b > c and c + a > b:
+      print(True)
+  print(False)
+  pass
 
-def persistence(n):
-  count = 0
-  while n >= 10:
-    split = [int(n) for n in str(n)]
-    product = 1 
-    for num in split:
-      product *= num
-    n = product
-    count += 1
-  print(count)
-    
-
-persistence(999)
+is_triangle(7,2,2)

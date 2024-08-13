@@ -1,3 +1,5 @@
-July 19, 2024
-6 Kyu Persistant Bugger
+August 13, 2024
+7 Kyu is this a triangle?
+
+
 
