@@ -1,5 +1,5 @@
 August 13, 2024
-6 Kyu Your order, please
+8 KYU how good are you?
 
 
 

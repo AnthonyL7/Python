@@ -1,7 +1,10 @@
-def digital_root(n):
-        while n >= 10:
-                n = sum(int(digit) for digit in str(n))
-        print(n)
+def better_than_average(class_points, your_points):
+    # Your code here
+  if (sum(class_points)/len(class_points)) < your_points:
+    print(True)
+  else:
+    print(False)
 
+  pass
 
-digital_root(493193)
+better_than_average([41, 75, 72, 56, 80, 82, 81, 33], 50)
