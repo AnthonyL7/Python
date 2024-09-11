@@ -1,5 +1,5 @@
 August 13, 2024
-8 KYU how good are you?
+7 KYU Number of People in the Bus
 
 
 

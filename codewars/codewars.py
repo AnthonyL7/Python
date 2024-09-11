@@ -1,10 +1,6 @@
-def better_than_average(class_points, your_points):
-    # Your code here
-  if (sum(class_points)/len(class_points)) < your_points:
-    print(True)
-  else:
-    print(False)
-
+def number(bus_stops):
+  result = [i[0] - i[1] for i in bus_stops]
+  print(sum(result))
   pass
 
-better_than_average([41, 75, 72, 56, 80, 82, 81, 33], 50)
+number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]])
