@@ -1,15 +1,14 @@
-def count_positives_sum_negatives(arr):
-  positive_sum = 0
-  negative_sum = 0
+def invert(lst):
   empty = []
-  for i in arr:
-    if i > 0:
-      positive_sum += i
-    elif i < 0:
-      negative_sum += i
-    else:
-      print(empty)
-  empty.insert(0, positive_sum)
-  empty.append(negative_sum)
-  print(empty)
-count_positives_sum_negatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])
+  append = 0
+  if lst is []:
+     print(empty)
+  else:
+    for i in lst:
+      if i > 0:
+        append = i * -1
+      else:
+        append = i * -1
+      empty.append(append)
+    print(empty)
+invert([1,-2,3,-4,5])
