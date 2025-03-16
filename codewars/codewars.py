@@ -1,9 +1,7 @@
-def check_for_factor(base, factor):
-    if base%factor == 0:
-        print('true')
-        return True
+def sequence_sum(begin_number, end_number, step):
+    if begin_number > end_number:
+      return 0 
     else:
-        print('false')
-        return False
-
-check_for_factor(10,2)
+      total = sum(range(begin_number, end_number+1, step))
+      return total
+sequence_sum(1,5,3)
