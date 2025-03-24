@@ -1,12 +1,6 @@
-def sum_array(arr):
-  if not isinstance(arr, list) or len(arr) < 3:
-    print('0')
+def sum_digits(number):
+  digits = [int(digit) for digit in str(abs(number))]
+  print(sum(digits))
 
-  arr_copy = arr.copy()
-  arr_copy.remove(max(arr_copy))
-  arr_copy.remove(min(arr_copy))
+sum_digits(-32)
 
-  total = sum(arr_copy)
-  print(total)
-
-sum_array([1, 1, 11, 2, 3])
