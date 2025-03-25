@@ -1,9 +1,5 @@
-def find_nb(m):
-  n = 1
-  volume = (n(n+1)//2)**2 
-  while volume < m:
-    n += 1
-    volume = (n(n+1)//2) ** 2
-  return n if volume ==  m else -1
-find_nb(4)
+def friend(x):
+  result = [name for name in x if len(name) == 4]
 
+  print(result)
+friend(["Ryan", "Kieran", "Jason", "Yous"])
